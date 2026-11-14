@@ -18,6 +18,10 @@ export class UserEntity extends Entity<UserProps> {
     this.name = value;
   }
 
+  updatePassword(value: string): void {
+    this.password = value;
+  }
+
   get name() {
     return this.props.name;
   }
